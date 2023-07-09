@@ -6,49 +6,38 @@ namespace waAdmision.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CitaController : ControllerBase
+    public class ServicioController : ControllerBase
     {
-
-        // GET: api/<CitaController>
+        // GET: api/<ServicioController>
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "value11", "value2" };
+            return new string[] { "value1", "value2" };
         }
 
-        // GET api/<CitaController>/5
+        // GET api/<ServicioController>/5
         [HttpGet("{id}")]
         public string Get(int id)
         {
-            return "Hola como estas";
+            return "value";
         }
 
-
-        // GET api/<CitaController>/5
-        [HttpGet("{idRegistro}")]
-        public string GetForm(int idRegistro)
-        {
-            return "Hola como estas";
-        }
-
-
-        // POST api/<CitaController>
+        // POST api/<ServicioController>
         [HttpPost]
         public void Post([FromBody] string value)
         {
         }
 
-        // PUT api/<CitaController>/5
+        // PUT api/<ServicioController>/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
         {
         }
 
-        // DELETE api/<CitaController>/5
+        // DELETE api/<ServicioController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
-            //Hola como estas
         }
     }
 }
