@@ -8,6 +8,7 @@ namespace waAdmision.Controllers
     [ApiController]
     public class CitaController : ControllerBase
     {
+
         // GET: api/<CitaController>
         [HttpGet]
         public IEnumerable<string> Get()
